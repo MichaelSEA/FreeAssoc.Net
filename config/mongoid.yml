@@ -1,0 +1,11 @@
+development:
+  host: localhost
+  database: free_assoc_development
+
+test:
+  host: localhost
+  database: free_assoc_test
+
+# set these environment variables on your prod server
+production:
+  uri: <%= ENV['MONGOHQ_URL'] %>

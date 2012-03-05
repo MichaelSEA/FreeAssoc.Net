@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title FreeAssocNet
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %p.notice= notice
+  %p.alert= alert
+  %body
+    %ul.hmenu
+      = render 'shared/navigation'
+    - flash.each do |name, msg|
+      = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
+    = yield
