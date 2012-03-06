@@ -17,6 +17,8 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+
+  gem "twitter-bootstrap-rails"
 end
 
 gem 'jquery-rails'
@@ -58,7 +60,6 @@ gem "guard-rspec", ">= 0.4.3", :group => :development
 gem "guard-cucumber", ">= 0.6.1", :group => :development
 gem "omniauth", ">= 1.0.0"
 gem "omniauth-twitter"
-gem "twitter-bootstrap-rails"
 gem "rails-footnotes", ">= 3.7", :group => :development
 
 gem "heroku"

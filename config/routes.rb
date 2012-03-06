@@ -7,6 +7,9 @@ FreeAssocNet::Application.routes.draw do
   resources :users, :only => [:show, :index]
   resources :about, :only => :index
 
+  match 'testimonials' => 'home#testimonials'
+  match 'resume' => 'home#resume'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

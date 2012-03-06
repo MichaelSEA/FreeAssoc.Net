@@ -1,14 +1,31 @@
 !!!
 %html
   %head
-    %title FreeAssocNet
+    %title FreeAssoc.Net
+    /[if lt IE 9]
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-  %p.notice= notice
-  %p.alert= alert
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
   %body
-    %ul.hmenu
-    - flash.each do |name, msg|
-      = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
-    = yield
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          .nav-collapse
+            %ul.nav
+              %li= link_to "Home", root_path
+              %li= link_to "LinkedIn", "http://www.linkedin.com/in/michaelcmurray", :target => "_blank"
+              %li= link_to "GitHub", "http://resume.github.com/?freeassoc",  :target => "_blank"
+              %li= link_to "Twitter", "https://twitter.com/#!/FreeAssocNET", :target => "_blank"
+              %li= link_to "Resume", resume_path
+              %li= link_to "Testimonials", testimonials_path
+    .container
+      .row
+        .span9= yield
+        -if action_name == "index"
+          .span3
+            %h2 About Me
+            %br
+            %h2
+              I am a full-stack web developer/ software engineer focused on Ruby and Rails  
