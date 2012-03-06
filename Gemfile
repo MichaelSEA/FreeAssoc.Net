@@ -62,4 +62,4 @@ gem "twitter-bootstrap-rails"
 gem "rails-footnotes", ">= 3.7", :group => :development
 
 gem "heroku"
-gem "thin"
+gem "thin", :group => :production
