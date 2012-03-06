@@ -1,8 +1,11 @@
 FreeAssocNet::Application.routes.draw do
 
+  get "about/index"
+
   root :to => 'home#index'
   devise_for :users
-  resources :users, :only => :show
+  resources :users, :only => [:show, :index]
+  resources :about, :only => :index
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
