@@ -1,3 +1,8 @@
+== FreeAssoc.Net
+
+Codeship Status for {FreeAssoc/FreeAssoc.Net}[https://www.codeship.io/projects/1510] https://www.codeship.io/projects/85538d20-5888-0130-1abe-123138152df8/status?branch=master
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
