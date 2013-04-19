@@ -9,6 +9,9 @@ FreeAssocNet::Application.routes.draw do
 
   match 'testimonials' => 'home#testimonials'
   match 'resume' => 'home#resume'
+  match 'ngn_comdex' => 'home#ngn_comdex'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

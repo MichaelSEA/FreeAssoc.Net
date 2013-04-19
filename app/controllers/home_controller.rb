@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+
   def index
   end
 
@@ -6,5 +7,8 @@ class HomeController < ApplicationController
   end
 
   def resume
+  end
+
+  def ngn_comdex
   end
 end

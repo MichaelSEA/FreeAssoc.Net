@@ -22,10 +22,4 @@
               %li= link_to "Testimonials", testimonials_path
     .container
       .row
-        .span9= yield
-        -if action_name == "index"
-          .span3
-            %h2 About Me
-            %br
-            %h2
-              I am a full-stack web developer/ software engineer focused on Ruby and Rails  
+        .span12= yield
